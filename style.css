@@ -1,0 +1,22 @@
+/* Warm linen, like the app. Colours are named once so dark mode can swap them. */
+:root {
+  --page: #f6f0e4;
+  --ink: #2f2a22;
+  --muted: #6b6152;
+  --link: #3f6b4a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --page: #1f1c17; --ink: #efe7d8; --muted: #b9ad98; --link: #9cc7a4; }
+}
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font: 17px/1.6 Georgia, "Times New Roman", serif;
+}
+main { max-width: 40rem; margin: 0 auto; padding: 2.5rem 16px 4rem; }
+h1 { font-size: 2rem; margin: 0.5rem 0 0.25rem; }
+h2 { font-size: 1.2rem; margin-top: 2rem; }
+.lede { color: var(--muted); margin-top: 0; }
+a { color: var(--link); }
+li { margin-bottom: 0.5rem; }
